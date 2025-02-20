@@ -13,8 +13,7 @@ export default function WeatherDisplay({info}) {
       <div className='cardContainer'>
       <Card sx={{ maxWidth: 345}}><CardMedia
         sx={{ height: 140 }}
-        image="https://images.unsplash.com/photo-1672226405717-697c84f48f9e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGR1c3R5JTIwd2VhdGhlcnxlbnwwfHwwfHx8MA%3D%3D"
-        title="green iguana"
+        image={info.temp>20?"https://plus.unsplash.com/premium_photo-1688804790113-809f21d2e7cc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGhvdCUyMHdlYXRoZXJ8ZW58MHx8MHx8fDA%3D":info.temp>10?"https://images.unsplash.com/photo-1509635022432-0220ac12960b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmFpbnl8ZW58MHx8MHx8fDA%3D":"https://images.unsplash.com/photo-1581002386342-65ca4cf53a5c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdpbnRlciUyMHdlYXRoZXJ8ZW58MHx8MHx8fDA%3D"}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
