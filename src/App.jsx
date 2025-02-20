@@ -1,5 +1,5 @@
 import React from 'react'
-import WeatherDisplay from './WeatherDisplay';
+import WeatherDisplay from './weatherDisplay'
 
 export default function App() {
   return (
